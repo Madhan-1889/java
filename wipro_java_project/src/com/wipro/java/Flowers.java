@@ -27,8 +27,10 @@ public class Flowers {
 		// TODO Auto-generated method stub
 		Flowers flower1 = new Flowers("Rose","red");
 		Flowers flower2 = new Flowers("Sunflower","yellow");
+		Flowers flower3 = new Flowers("Jasmine","white");
 		flower1.display();
 		flower2.display();
+		flower3.display();
 
 	}
 
