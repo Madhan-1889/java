@@ -19,19 +19,7 @@ public class Flowers {
 	public void display() {
 		System.out.println(name+" is the name of a flower and it is "+color+" in colour");
 
-     
-	String color;
-	String name;
-	public Flowers(String name,String color) {
-		// TODO Auto-generated constructor stub
-		this.name=name;
-		this.color=color;
 	}
-	
-	public void display() {
-		System.out.println(name+" is a flower and it is "+color+" in colour");
-	}
-
 	/**
 	 * @param args
 	 */
@@ -41,11 +29,6 @@ public class Flowers {
 		Flowers flower1= new Flowers("Rose","red");
 		Flowers flower2= new Flowers("Sunflower","yellow");
 		Flowers flower3= new Flowers("Jasmine","white");
-
-		Flowers flower1 = new Flowers("Rose","red");
-		Flowers flower2 = new Flowers("Sunflower","yellow");
-		Flowers flower3 = new Flowers("Jasmine","white");
-
 		flower1.display();
 		flower2.display();
 		flower3.display();
