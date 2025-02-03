@@ -10,7 +10,7 @@ public class Employee {
 
 	private int empId;//Employee Id
 	private String name;// Employee's Name
-	private String age; //Employee's Age
+	private int age; //Employee's Age
 	private int salary; //Employee's Salary
 	
 	
@@ -26,10 +26,10 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	public int getSalary() {
