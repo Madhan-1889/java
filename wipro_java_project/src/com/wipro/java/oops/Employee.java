@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.wipro.java;
+package com.wipro.java.oops;
 
 /**
  * POJO - Plain Old Java Object
@@ -39,8 +39,4 @@ public class Employee {
 		this.salary = salary;
 	}
 	
-	public Employee(){
-		// TODO Auto-generated constructor stub	
-	}
-
 }

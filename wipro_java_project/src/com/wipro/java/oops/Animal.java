@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.wipro.java;
+package com.wipro.java.oops;
 
 /**
  * POJO - Plain Old Java Object
