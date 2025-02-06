@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 
  */
-public class Collections {
+public class CollectionsExample {
 
 	/**
 	 * @param args
