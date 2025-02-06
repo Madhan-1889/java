@@ -10,18 +10,18 @@ import java.util.List;
 /**
  * 
  */
-public class Movie implements Comparable<Movie> {
+public class Movie implements Comparable<Movie>{
 	private String n; //Movie name
 	private double r; //Movie rating
 	private int y; //Movie year
 	
-	public Movie(String n,double r, int y) {
+	public Movie(String n,double r, int y){
 		this.n=n;
 		this.r=r;
 		this.y=y;
 	}
 	
-	public int compareTo(Movie m) {
+	public int compareTo(Movie m){
 		return Double.compare(m.r,this.r);
 	}
 	
@@ -40,7 +40,7 @@ public class Movie implements Comparable<Movie> {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		// TODO Auto-generated method stub
 		List<Movie> movie= new ArrayList<>();
 		movie.add(new Movie("Leo",8.2,2023));

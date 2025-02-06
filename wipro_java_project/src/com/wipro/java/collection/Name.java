@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 
  */
-public class Name implements Comparator<Movie1>{
+public class Name implements Comparator<Movie1> {
 	public int compare(Movie1 m1,Movie1 m2) {
 		
 		return m1.getN().compareTo(m2.getN());
