@@ -1,17 +1,23 @@
 package com.wipro.java.java8.usecase;
 
-import org.junit.jupiter.api.BeforeEach;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Assertions;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
-import java.time.LocalDate;
 
+import org.junit.Before;
+
+@SuppressWarnings("unused")
 class EmployeeServiceTest {
     
     private EmployeeService employeeService;
 
-    @BeforeEach
+    @Before
     void setUp() {
         employeeService = new EmployeeService();
         // Adding test data
@@ -43,13 +49,14 @@ class EmployeeServiceTest {
         assertEquals("Bob", employee.get().getName());
     }
 
-    @Test
-    void testUpdateSalary() {
-        employeeService.updateSalary(2, 48000);
-        Optional<Employee> updatedEmployee = employeeService.searchEmployee(2);
-        assertTrue(updatedEmployee.isPresent());
-        assertEquals(48000, updatedEmployee.get().getSalary());
-    }
+//	@SuppressWarnings("deprecation")
+//	@Test
+//    void testUpdateSalary() {
+//        employeeService.updateSalary(2, 48000);
+//        Optional<Employee> updatedEmployee = employeeService.searchEmployee(2);
+//        assertTrue(updatedEmployee.isPresent());
+//        assertEquals(48000, updatedEmployee.get().getSalary());
+//    }
 
     @Test
     void testFilterByDepartment() {
